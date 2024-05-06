@@ -5,8 +5,7 @@ body {
   min-width: 320px;
 }
 
-html,
-button {
+html {
   font-size: calc(16px + 1.5 * 1vw);
   font-family: -apple-system, BlinkMacSystemFont, 'Avenir Next', Avenir, 'Segoe UI', 'Helvetica Neue', Helvetica,
   Ubuntu, Roboto, Noto, Arial, sans-serif;
@@ -20,11 +19,10 @@ body {
 }
 
 .helloworld {
-  display: inline;
+  display: inline-block;
 }
 
-p,
-button {
+.text {
   font-weight: bold;
   line-height: 1.5rem;
   margin-top: 0.75rem;
@@ -32,33 +30,34 @@ button {
   color: black;
 }
 
-.ghost {
+.text-ghost {
   color: #D4D4D4;
 }
 
-a {
+.link {
   color: hotpink;
   transition: color 0.1s;
 }
 
-a:hover {
+.link:hover {
   color: #E7469A;
 }
 
-a:active {
+.link:active {
   color: hotpink;
 }
 
-button {
+.action {
   display: inline;
   color: cornflowerblue;
+  background-color:;
   transition: color 0.1s;
 }
 
-button:hover {
+.action:hover {
   color: #3676E8;
 }
 
-button:active {
+.action:active {
   color: cornflowerblue;
 }
