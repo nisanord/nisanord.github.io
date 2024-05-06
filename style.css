@@ -6,7 +6,6 @@ body {
 }
 
 html {
-  font-size: calc(16px + 1.5 * 1vw);
   font-family: -apple-system, BlinkMacSystemFont, 'Avenir Next', Avenir, 'Segoe UI', 'Helvetica Neue', Helvetica,
   Ubuntu, Roboto, Noto, Arial, sans-serif;
 }
@@ -21,7 +20,8 @@ body {
 .text,
 .action,
 .link,
-.remark {
+.ghost {
+  font-size: calc(16px + 1.5 * 1vw);
   font-weight: bold;
   line-height: 1.5rem;
   margin-top: 0.75rem;
@@ -31,10 +31,6 @@ body {
 
 .ghost {
   color: #D4D4D4;
-}
-
-.remark {
-  display: inline;
 }
 
 .link {
