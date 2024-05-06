@@ -31,7 +31,7 @@ p {
 
 a {
   color: hotpink;
-  transition: color 0.3s;
+  transition: color 0.1s;
 }
 
 a:hover {
@@ -42,15 +42,15 @@ a:active {
   color: hotpink;
 }
 
-.button {
+button {
   color: cornflowerblue;
-  transition: color 0.3s;
+  transition: color 0.1s;
 }
 
-.button:hover {
+button:hover {
   color: #3676E8;
 }
 
-.button:active {
+button:active {
   color: cornflowerblue;
 }
