@@ -1,1 +1,44 @@
-test
+html, body {
+  height: 100%;
+  width: 75%;
+  min-width: 320px;
+}
+
+html {
+  font-size: calc(16px + 1.5 * 1vw);
+  font-family: -apple-system, BlinkMacSystemFont, 'Avenir Next', Avenir, 'Segoe UI', 'Helvetica Neue', Helvetica,
+  Ubuntu, Roboto, Noto, Arial, sans-serif;
+}
+
+body {
+  display: block;
+  margin: calc(16px + 2.5 * 1vw);
+  margin-top: calc(64px + 2.5 * 1vw);
+  color: snow;
+}
+
+p {
+  font-weight: bold;
+  line-height: 1.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: black;
+}
+
+a {
+  color: hotpink;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #E7469A;
+}
+
+.button {
+  color: cornflowerblue;
+  transition: color 0.3s;
+}
+
+.button:hover {
+  color: #3676E8;
+}
