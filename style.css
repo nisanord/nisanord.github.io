@@ -18,7 +18,10 @@ body {
   color: snow;
 }
 
-.text {
+.text,
+.action,
+.link,
+.remark {
   font-weight: bold;
   line-height: 1.5rem;
   margin-top: 0.75rem;
@@ -31,7 +34,7 @@ body {
 }
 
 .remark {
-  display: inline-block;
+  display: inline;
 }
 
 .link {
@@ -50,7 +53,7 @@ body {
 .action {
   display: inline;
   color: cornflowerblue;
-  background-color:;
+  background-color: transparent;
   transition: color 0.1s;
 }
 
