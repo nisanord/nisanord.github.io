@@ -50,6 +50,7 @@ a:active {
 }
 
 button {
+  display: inline;
   color: cornflowerblue;
   transition: color 0.1s;
 }
