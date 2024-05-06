@@ -1,10 +1,12 @@
-html, body {
+html, 
+body {
   height: 100%;
   width: 75%;
   min-width: 320px;
 }
 
-html {
+html,
+button {
   font-size: calc(16px + 1.5 * 1vw);
   font-family: -apple-system, BlinkMacSystemFont, 'Avenir Next', Avenir, 'Segoe UI', 'Helvetica Neue', Helvetica,
   Ubuntu, Roboto, Noto, Arial, sans-serif;
@@ -17,7 +19,12 @@ body {
   color: snow;
 }
 
-p {
+.helloworld {
+  display: inline;
+}
+
+p,
+button {
   font-weight: bold;
   line-height: 1.5rem;
   margin-top: 0.75rem;
