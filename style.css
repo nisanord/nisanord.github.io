@@ -9,11 +9,6 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, 'Avenir Next', Avenir, 'Segoe UI', 'Helvetica Neue', Helvetica,
   Ubuntu, Roboto, Noto, Arial, sans-serif;
   font-size: calc(16px + 1.5 * 1vw);
-  font-weight: medium;
-  line-height: 1.5rem;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-  color: black;
 }
 
 body {
@@ -21,6 +16,14 @@ body {
   margin: calc(16px + 2.5 * 1vw);
   margin-top: calc(64px + 2.5 * 1vw);
   color: snow;
+}
+
+p {
+  font-weight: medium;
+  line-height: 1.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: black;
 }
 
 .ghost {
