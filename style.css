@@ -37,7 +37,7 @@ body {
   display: block;
   margin: calc(16px + 2.5 * 1vw);
   margin-top: calc(64px + 2.5 * 1vw);
-  color: var(--color-bg);
+  background-color: var(--color-bg);
 }
 
 p {
