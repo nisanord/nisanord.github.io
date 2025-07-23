@@ -31,30 +31,14 @@ p {
 }
 
 .link {
-  color: hotpink;
+  color: cornflowerblue;
   transition: color 0.1s;
 }
 
 .link:hover {
-  color: #E7469A;
-}
-
-.link:active {
   color: hotpink;
 }
 
-.action {
+.link:active {
   color: cornflowerblue;
-  transition: color 0.1s;
-  text-decoration: none;
-}
-
-.action:hover {
-  color: #3676E8;
-  text-decoration: none;
-}
-
-.action:active {
-  color: cornflowerblue;
-  text-decoration: none;
 }
