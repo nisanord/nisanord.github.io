@@ -1,3 +1,23 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: snow;
+    --color-text: black;
+    --color-ghost: gainsboro;
+    --color-link: cornflowerblue;
+    --color-link-hovered: hotpink;
+    --color-link-active: hotpink;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: black;
+    --color-text: snow;
+    --color-ghost: slategray;
+    --color-link: cornflowerblue;
+    --color-link-hovered: hotpink;
+    --color-link-active: hotpink;
+  }
+
 html, 
 body {
   height: 100%;
@@ -15,7 +35,7 @@ body {
   display: block;
   margin: calc(16px + 2.5 * 1vw);
   margin-top: calc(64px + 2.5 * 1vw);
-  color: snow;
+  color: var(--color-bg);
 }
 
 p {
@@ -23,22 +43,22 @@ p {
   line-height: 1.5rem;
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
-  color: black;
+  color: var(--color-text);
 }
 
 .ghost {
-  color: #D4D4D4;
+  color: var(--color-ghost);
 }
 
 .link {
-  color: cornflowerblue;
+  color: var(--color-link);
   transition: color 0.1s;
 }
 
 .link:hover {
-  color: hotpink;
+  color: var(--color-link-hovered);
 }
 
 .link:active {
-  color: cornflowerblue;
+  color: var(--color-link-active);
 }
