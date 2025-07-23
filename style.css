@@ -2,7 +2,7 @@
   :root {
     --color-bg: snow;
     --color-text: black;
-    --color-ghost: gainsboro;
+    --color-ghost: black;
     --color-link: cornflowerblue;
     --color-link-hovered: hotpink;
     --color-link-active: hotpink;
@@ -13,7 +13,7 @@
   :root {
     --color-bg: black;
     --color-text: slategray;
-    --color-ghost: slategray;
+    --color-ghost: snow;
     --color-link: cornflowerblue;
     --color-link-hovered: hotpink;
     --color-link-active: hotpink;
