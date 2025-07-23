@@ -13,7 +13,7 @@
   :root {
     --color-bg: black;
     --color-text: slategray;
-    --color-ghost: snow;
+    --color-ghost: slategray;
     --color-link: cornflowerblue;
     --color-link-hovered: hotpink;
     --color-link-active: hotpink;
