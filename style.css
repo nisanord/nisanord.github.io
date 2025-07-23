@@ -12,7 +12,7 @@
   @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: black;
-    --color-text: snow;
+    --color-text: slategray;
     --color-ghost: slategray;
     --color-link: cornflowerblue;
     --color-link-hovered: hotpink;
