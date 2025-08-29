@@ -63,6 +63,10 @@ p {
 }
 
 .ghost {
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
   cursor: pointer;
   background: linear-gradient(
     270deg,
@@ -83,28 +87,4 @@ p {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
-}
-
-.ghost::after {
-  position: absolute;
-  font: inherit;
-  letter-spacing: inherit;
-  line-height: inherit;
-  text-align: inherit;
-  background: inherit;            
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: opacity .25s ease;
-  cursor: pointer;
-}
-
-.ghost::after {
-  content: attr(hover);
-  opacity: 0;
-}
-
-@media (hover: hover) {
-  .ghost:hover { opacity: 0; }
-  .ghost:hover::after  { opacity: 1; }
 }
