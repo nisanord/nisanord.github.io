@@ -110,7 +110,7 @@ p {
 }
 
 .ghost::after {
-  content: attr(data-normal);
+  content: attr(data-default);
   opacity: 1;
 }
 
