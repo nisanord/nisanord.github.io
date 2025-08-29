@@ -85,7 +85,8 @@ p {
   100% { background-position: 0% 50%; }
 }
 
-.ghost::before{
+.ghost::after {
+  position: absolute;
   font: inherit;
   letter-spacing: inherit;
   line-height: inherit;
@@ -99,37 +100,11 @@ p {
 }
 
 .ghost::after {
-  font: inherit;
-  letter-spacing: inherit;
-  line-height: inherit;
-  text-align: inherit;
-  background: inherit;            
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: opacity .25s ease;
-  cursor: pointer;
-}
-
-.ghost {
+  content: attr(hover);
   opacity: 0;
-}
-
-.ghost::after {
-  content: attr(data-hover);
-  opacity: 0;
-}
-
-.ghost::before {
-  content: attr(data-default);
-  opacity: 1;
 }
 
 @media (hover: hover) {
-  .ghost:hover::before { opacity: 0; }
+  .ghost:hover { opacity: 0; }
   .ghost:hover::after  { opacity: 1; }
 }
-
-.ghost:active::before { opacity: 0; }
-.ghost[data-active]:active::before { content: attr(data-active); }
-.ghost:active::after  { opacity: 1; }
