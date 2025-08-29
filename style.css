@@ -5,7 +5,7 @@
     --color-link: cornflowerblue;
     --color-link-hovered: hotpink;
     --color-link-active: hotpink;
-    --color-a11y: color(cornflowerblue / 0.5);
+    --color-a11y: color(cornflowerblue display-p3 r g b / 0.5);
   }
 }
   
@@ -16,7 +16,7 @@
     --color-link: cornflowerblue;
     --color-link-hovered: hotpink;
     --color-link-active: hotpink;
-    --color-a11y: color(cornflowerblue / 0.5);
+    --color-a11y: color(cornflowerblue display-p3 r g b / 0.5);
   }
 }
 
