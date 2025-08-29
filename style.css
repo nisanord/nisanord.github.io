@@ -90,13 +90,18 @@ p {
 }
 
 .ghost{
-  transition:opacity .25s ease;
   outline:none;
+  transition: background-color 0.6s;
 }
-.ghost.is-out{ opacity:0; }
+
+.ghost:hover{
+ background-color: hotpink; 
+}
+
 .ghost:focus-visible{
-  outline:4px solid hotpink;
+  outline:4px solid currentColor;
   outline-offset:4px;
+  border-radius:12px;
 }
 
 @media (prefers-reduced-motion: reduce){
