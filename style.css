@@ -63,6 +63,31 @@ p {
 }
 
 .ghost {
+  content: "(ﾉ◕ヮ◕)ﾉ:\30FB\FF9F✧";
+  cursor: pointer;
+  background: linear-gradient(
+    270deg,
+    hotpink,
+    cornflowerblue,
+    aquamarine,
+    cornflowerblue,
+    hotpink
+  );
+    background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 8s ease infinite;
+}
+
+/* gradient animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.ghost:hover {
+  content: "(ﾉ´∀`)ﾉ:\30FB\FF9F✦";
   cursor: pointer;
   background: linear-gradient(
     270deg,
