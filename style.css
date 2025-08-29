@@ -5,6 +5,7 @@
     --color-link: cornflowerblue;
     --color-link-hovered: hotpink;
     --color-link-active: hotpink;
+    --color-a11y: cornflowerblue;
   }
 }
   
@@ -15,6 +16,7 @@
     --color-link: cornflowerblue;
     --color-link-hovered: hotpink;
     --color-link-active: hotpink;
+    --color-a11y: cornflowerblue;
   }
 }
 
@@ -62,6 +64,12 @@ p {
   cursor: pointer;
 }
 
+.link:focus-visible {
+  outline: 4px solid var(--color-a11y);
+  outline-offset: 4px;
+  border-radius: 12px;
+}
+
 .ghost {
   display: inline-block;
   overflow: hidden;
@@ -90,20 +98,12 @@ p {
 }
 
 .ghost{
-  outline:none;
+  outline: none;
   transition: background-color 0.6s;
 }
 
-.ghost:hover{
- background-color: hotpink; 
-}
-
-.ghost:focus-visible{
-  outline:4px solid currentColor;
-  outline-offset:4px;
-  border-radius:12px;
-}
-
-@media (prefers-reduced-motion: reduce){
-  .swap{ transition:none; }
+.ghost:focus-visible {
+  outline: 4px solid var(--color-a11y);
+  outline-offset: 4px;
+  border-radius: 12px;
 }
