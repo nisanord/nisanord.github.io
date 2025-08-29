@@ -67,10 +67,9 @@ p {
   background: linear-gradient(
     270deg,
     hotpink,
-    mediumspringgreen,
     cornflowerblue
   );
-    background-size: 200% 200%;
+    background-size: 100% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientShift 6s ease infinite;
