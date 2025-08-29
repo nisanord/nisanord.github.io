@@ -87,7 +87,7 @@ p {
 }
 
 .ghost:hover {
-  content: "(ﾉ´∀`)ﾉ:\30FB\FF9F✦";
+  content: "(ﾉ-‿-)ﾉ:\30FB\FF9F✦";
   cursor: pointer;
   background: linear-gradient(
     270deg,
@@ -102,6 +102,24 @@ p {
   -webkit-text-fill-color: transparent;
   animation: gradientShift 8s ease infinite;
 }
+
+.ghost:checked {
+  content: "(ﾉꈍ‿ꈍ)ﾉ:\30FB\FF9F✧";
+  cursor: pointer;
+  background: linear-gradient(
+    270deg,
+    hotpink,
+    cornflowerblue,
+    aquamarine,
+    cornflowerblue,
+    hotpink
+  );
+    background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 8s ease infinite;
+}
+
 
 /* gradient animation */
 @keyframes gradientShift {
