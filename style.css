@@ -141,7 +141,7 @@ p {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity .25s ease;
-  pointer-events: none;
+  cursor: pointer;
 }
 
 .ghost::after {
