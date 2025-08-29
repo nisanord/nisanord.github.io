@@ -51,19 +51,20 @@ p {
 .link {
   color: var(--color-link);
   transition: color 0.1s;
+  cursor: pointer;
 }
 
 .link:hover {
   color: var(--color-link-hovered);
+  cursor: pointer;
 }
 
 .link:active {
   color: var(--color-link-active);
+  cursor: pointer;
 }
 
 .ghost {
-  display: inline-block;
-  font-size: 2rem;
   animation: bounce 1.2s infinite ease-in-out;
   cursor: default;
   position: relative;
