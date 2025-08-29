@@ -80,7 +80,7 @@ p {
     #facc15,
     #f472b6
   );
-    background-size: 600% 600%;
+    background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientShift 6s ease infinite;
