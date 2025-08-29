@@ -2,7 +2,6 @@
   :root {
     --color-bg: snow;
     --color-text: black;
-    --color-ghost: hotpink;
     --color-link: cornflowerblue;
     --color-link-hovered: hotpink;
     --color-link-active: hotpink;
@@ -13,7 +12,6 @@
   :root {
     --color-bg: black;
     --color-text: slategray;
-    --color-ghost: hotpink;
     --color-link: cornflowerblue;
     --color-link-hovered: hotpink;
     --color-link-active: hotpink;
@@ -67,18 +65,13 @@ p {
 .ghost {
   color: var(--color-ghost);
   cursor: pointer;
-}
-
-.ghost:hover {
-  color: var(--color-ghost);
-  cursor: pointer;
   background: linear-gradient(
     270deg,
-    #ff6ec4,
-    #7873f5,
-    #4ade80,
-    #facc15,
-    #f472b6
+    hotpink,
+    salmon,
+    yellow,
+    mediumspringgreen,
+    cornflowerblue
   );
     background-size: 200% 200%;
   -webkit-background-clip: text;
