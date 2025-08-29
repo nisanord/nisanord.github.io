@@ -63,7 +63,6 @@ p {
 }
 
 .ghost {
-  content: "(ﾉ◕ヮ◕)ﾉ:\30FB\FF9F✧";
   cursor: pointer;
   background: linear-gradient(
     270deg,
@@ -86,17 +85,8 @@ p {
   100% { background-position: 0% 50%; }
 }
 
-/* gradient animation */
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
 .ghost::before,
 .ghost::after {
-  position: absolute;
-  inset: 0;
   font: inherit;
   letter-spacing: inherit;
   line-height: inherit;
