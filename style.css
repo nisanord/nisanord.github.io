@@ -63,6 +63,8 @@ p {
 }
 
 .ghost {
+  display: inline-block;
+  overflow: hidden;
   font-weight: 600;
   line-height: 1.5rem;
   margin-top: 0.75rem;
@@ -89,6 +91,13 @@ p {
   100% { background-position: 0% 50%; }
 }
 
-[data-default]::before {
-  content: attr(data-default)
+.roller {
+  display: inline-flex;
+  flex-direction: column;
+  animation: roll 6s steps(3) infinite;
+  will-change: transform;
+}
+@keyframes roll {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-300%); } /* 3 steps, 3 ghosts */
 }
