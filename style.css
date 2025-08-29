@@ -103,8 +103,8 @@ p {
   animation: gradientShift 8s ease infinite;
 }
 
-.ghost:checked {
-  content: "(ﾉꈍ‿ꈍ)ﾉ:\30FB\FF9F✧";
+.ghost:active {
+  content: "(ﾉꈍヮꈍ)ﾉ:\30FB\FF9F✧";
   cursor: pointer;
   background: linear-gradient(
     270deg,
@@ -127,3 +127,38 @@ p {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+.ghost::before,
+.ghost::after {
+  position: absolute;
+  inset: 0;
+  font: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  background: inherit;            
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity .25s ease;
+  pointer-events: none;
+}
+
+.ghost::after {
+  content: attr(data-normal);
+  opacity: 1;
+}
+
+.ghost::before {
+  content: attr(data-hover);
+  opacity: 0;
+}
+
+@media (hover: hover) {
+  .ghost:hover::before { opacity: 1; }
+  .ghost:hover::after  { opacity: 0; }
+}
+
+.ghost:active::before { opacity: 1; }
+.ghost[data-active]:active::before { content: attr(data-active); }
+.ghost:active::after  { opacity: 0; }
