@@ -1,6 +1,6 @@
 (() => {
   const el = document.getElementById('ghost');
-  const texts = ['(ﾉꈍoꈍ)ﾉ:&#x30FB;&#xFF9F✧','(ﾉ—з—)ﾉ:&#x30FB;&#xFF9F✧','(ﾉ◕ヮ◕)ﾉ:&#x30FB;&#xFF9F;✧'];
+  const texts = ['(ﾉꈍoꈍ)ﾉ:・ﾟ✧','(ﾉ—з—)ﾉ:・ﾟ✧','(ﾉ◕ヮ◕)ﾉ:・ﾟ✧'];
   let i = 0;
   let busy = false;
   const prefersReduced = window.matchMedia &&
