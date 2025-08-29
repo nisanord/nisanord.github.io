@@ -75,7 +75,11 @@ p {
   overflow: hidden;
   font-weight: 600;
   line-height: 1.5rem;
+  outline: none;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   background: linear-gradient(
     270deg,
     hotpink,
@@ -95,11 +99,6 @@ p {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
-}
-
-.ghost{
-  outline: none;
-  transition: background-color 0.6s;
 }
 
 .ghost:focus-visible {
