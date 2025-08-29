@@ -68,9 +68,9 @@ p {
     270deg,
     hotpink,
     cornflowerblue,
-    mediumslateblue
+    aquamarine
   );
-    background-size: 600% 600%;
+    background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientShift 8s ease infinite;
