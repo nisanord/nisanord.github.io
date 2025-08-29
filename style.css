@@ -66,8 +66,9 @@ p {
   display: inline-block;
   overflow: hidden;
   font-weight: 600;
-  height: 1.5rem;
   line-height: 1.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
   cursor: pointer;
   background: linear-gradient(
     270deg,
@@ -88,15 +89,4 @@ p {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
-}
-
-.roller {
-  display: inline-flex;
-  flex-direction: column;
-  animation: roll 6s steps(3) infinite;
-  will-change: transform;
-}
-@keyframes roll {
-  0%   { transform: translateY(0); }
-  100% { transform: translateY(-4.5rem); } /* 3 steps, 3 ghosts */
 }
