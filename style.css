@@ -67,7 +67,6 @@ p {
 .ghost {
   animation: bounce 1.2s infinite ease-in-out;
   cursor: default;
-  position: relative;
   color: var(--color-ghost);
 }
 
