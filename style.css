@@ -65,31 +65,30 @@ p {
 }
 
 .ghost {
-  animation: bounce 1.2s infinite ease-in-out;
-  cursor: default;
   color: var(--color-ghost);
+  cursor: pointer;
 }
 
-/* подпрыгивание */
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px) rotate(-3deg); }
+.ghost:hover {
+  color: var(--color-ghost);
+  cursor: pointer;
+  background: linear-gradient(
+    270deg,
+    #ff6ec4,
+    #7873f5,
+    #4ade80,
+    #facc15,
+    #f472b6
+  );
+    background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s ease infinite;
 }
 
-/* ✧ sparkles */
-.ghost::after {
-  content: "✧";
-  position: absolute;
-  right: -1.2em;
-  top: -0.2em;
-  font-size: 1.5rem;
-  opacity: 0;
-  animation: sparkle 1.5s infinite ease-in-out;
-}
-
-@keyframes sparkle {
-  0% { opacity: 0; transform: scale(0.5) translateY(0); }
-  30% { opacity: 1; transform: scale(1.2) translateY(-5px); }
-  60% { opacity: 0.8; transform: scale(1) translateY(-10px); }
-  100% { opacity: 0; transform: scale(0.5) translateY(-15px); }
+/* gradient animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
