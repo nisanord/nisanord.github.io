@@ -78,7 +78,7 @@ p {
     cornflowerblue,
     hotpink
   );
-    background-size: 400% 400%;
+  background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientShift 8s ease infinite;
@@ -89,4 +89,18 @@ p {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+.ghost{
+  transition:opacity .25s ease;
+  outline:none;
+}
+.ghost.is-out{ opacity:0; }
+.ghost:focus-visible{
+  outline:4px solid hotpink;
+  outline-offset:4px;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .swap{ transition:none; }
 }
