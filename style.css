@@ -68,7 +68,9 @@ p {
     270deg,
     hotpink,
     cornflowerblue,
-    aquamarine
+    aquamarine,
+    cornflowerblue,
+    hotpink
   );
     background-size: 400% 400%;
   -webkit-background-clip: text;
