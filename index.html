@@ -13,7 +13,8 @@
   
   <body>
     <main>
-      <div class="ghost" id="ghost" role="button" tabindex="0" aria-live="polite" aria-label="Change smiley">
+      <div class="ghost" id="ghost" role="button" tabindex="0" aria-live="polite" aria-label="Change smiley" 
+      onclick="_gaq.push(['_trackEvent', 'button', 'click', 'ghost']);">
         (ﾉ◕ヮ◕)ﾉ:&#x30FB;&#xFF9F;✧
       </div>
       <p>
@@ -22,17 +23,22 @@
       <p>
         I&nbsp;am a&nbsp;senior product designer, experienced in design&nbsp;systems.
         Now&nbsp;I&nbsp;am building Magritte&nbsp;— the&nbsp;brand&nbsp;new multiplatform design system for
-        <a href="https://hh.ru" target="_blank" rel="noopener" class="link">HeadHunter</a>.
-        I&nbsp;also&nbsp;maintain <a href="https://surveyjs.io" target="_blank" rel="noopener" class="link">SurveyJS</a>, 
-        the coolest form builder ever.
+        <a href="https://hh.ru" target="_blank" rel="noopener" class="link"
+        onclick="_gaq.push(['_trackEvent', 'link', 'click', 'hh']);">HeadHunter</a>.
+        I&nbsp;also&nbsp;maintain <a href="https://surveyjs.io" target="_blank" rel="noopener" class="link"
+        onclick="_gaq.push(['_trackEvent', 'link', 'click', 'sjs']);">SurveyJS</a>,the coolest form builder ever.
       </p>
       <p>
         You can find me on
-        <a href="https://linkedin.com/in/nisanord-cv" target="_blank" rel="noopener" class="link">LinkedIn</a>,
-        <a href="https://github.com/nisanord" target="_blank" rel="noopener" class="link">GitHub</a>,
-        <a href="https://nisanord.t.me" target="_blank" rel="noopener" class="link">Telegram</a>
+        <a href="https://linkedin.com/in/nisanord-cv" target="_blank" rel="noopener" class="link"
+        onclick="_gaq.push(['_trackEvent', 'link', 'click', 'linkedin']);">LinkedIn</a>,
+        <a href="https://github.com/nisanord" target="_blank" rel="noopener" class="link"
+        onclick="_gaq.push(['_trackEvent', 'link', 'click', 'github']);">GitHub</a>,
+        <a href="https://nisanord.t.me" target="_blank" rel="noopener" class="link"
+        onclick="_gaq.push(['_trackEvent', 'link', 'click', 'telegram']);">Telegram</a>
         or&nbsp;write me at
-        <a href="mailto:hi@nisanord.com" class="link">hi@nisanord.com</a>.
+        <a href="mailto:hi@nisanord.com" class="link"
+        onclick="_gaq.push(['_trackEvent', 'link', 'click', 'mail']);">hi@nisanord.com</a>.
       </p>
     </main>
     
