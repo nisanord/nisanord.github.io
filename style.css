@@ -29,7 +29,7 @@ body {
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Inter", "Montserrat", "Noto Sans Symbols 2", "Noto Sans Symbols", 
   "Noto Sans JP", "Segoe UI Symbol", Helvetica, Ubuntu, Roboto, Noto, Arial, sans-serif;
-  font-size: calc(16px + 1.2 * 1vw);
+  font-size: calc(15px + 1.5 * 1vw);
 }
 
 body {
